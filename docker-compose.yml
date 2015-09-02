@@ -1,7 +1,6 @@
 shmir:
     build: .
     working_dir: /opt/shmir
-    command: supervisord -c /etc/supervisor/supervisord.conf
     volumes:
         - .:/opt/shmir
         - etc/shmir:/etc/shmir

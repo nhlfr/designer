@@ -12,7 +12,7 @@ setup(
     entry_points=('[console_scripts]\n'
                   'shmir = shmir:run\n'
                   'shmir-db-manage = shmir.data.migration.cli:main\n'
-                  'shmir-db-seed = shmir.data.cli:main'),
+                  'shmir-db-seed = shmir.data.cli:seed_initial_data'),
     install_requires=[
         str(package.req)
         for package in pip.req.parse_requirements(
